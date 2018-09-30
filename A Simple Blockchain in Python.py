@@ -121,7 +121,7 @@ class User:
     def minePendingTransactions(self):
         if self.blockcoin is not None:
             if len(self.blockcoin.pendingTransactions) != 0:
-                miningRewardAddress = input("Enter address to transfer money on successful mining")
+                miningRewardAddress = input("Enter address to transfer money on successful mining: ")
                 self.blockcoin.minePendingTransactions(miningRewardAddress)
             else:
                 print("No transactions are pending")
@@ -143,7 +143,7 @@ class User:
     
     def getBalanceOfAddress(self):
         address = input("Enter address to get balance for: ")
-        print("Balance is: " + getBalanceOfAddress(address))
+        print("Balance is: " + self.blockcoin.getBalanceOfAddress(address))
         
 
 if __name__ == '__main__':
