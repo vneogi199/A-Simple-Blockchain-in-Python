@@ -150,7 +150,7 @@ if __name__ == '__main__':
     currentUser = User()
     choice = 1
     while(choice != 0):
-        print("\n \n Select appropriate option:")
+        print("\n Select appropriate option:")
         print("1. Create a new blockchain")
         print("2. Create a transaction to be added to the blockchain")
         print("3. Mine pending transactions")
@@ -160,7 +160,7 @@ if __name__ == '__main__':
         print("7. Get balance of address")
         print("0. Exit")
         choice = int(input())
-        print("\n \n")
+        print("\n")
         if choice == 1:
             currentUser.createBlockchain()
         elif choice == 2:
