@@ -97,7 +97,7 @@ class Blockchain:
         return True
 
 
-class User:
+class User_actions:
     def __init__(self):
         self.difficulty = 0
         self.blockcoin = None
@@ -147,7 +147,7 @@ class User:
         
 
 if __name__ == '__main__':
-    currentUser = User()
+    currentUser = User_actions()
     choice = 1
     while(choice != 0):
         print("\n Select appropriate option:")
