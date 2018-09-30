@@ -143,7 +143,26 @@ class User_actions:
     
     def getBalanceOfAddress(self):
         address = input("Enter address to get balance for: ")
-        print("Balance is: " + self.blockcoin.getBalanceOfAddress(address))
+        print("Balance is: " + str(self.blockcoin.getBalanceOfAddress(address)))
+
+    def modifyBlock(self):
+        if self.blockcoin is not None:
+            # TODO
+            print("Pending")
+            # print("There are " + str(len(self.blockcoin.chain)) + " blocks in the chain")
+            # pos = int(input("Enter the position of the block to modify: "))
+            # if(len(self.blockcoin.chain[pos-1].transactions)==1):
+            #     self.blockcoin.chain[pos-1].transactions['amount']=100000
+            #     self.blockcoin.chain[pos-1].hash = self.blockcoin.chain[pos-1].calculateHash()
+            #     print("Changed the transaction amount of block with position " + str(pos) + " to " + str(self.blockcoin.chain[pos-1].transactions['amount']) + " and recalculated it's hash")
+            # else:
+            #     print("There are " + str(len(self.blockcoin.chain[pos-1].transactions)) + " transactions in the block")
+            #     transPos = int(input("Enter the position of the transaction to modify: "))
+            #     self.blockcoin.chain[pos-1].transactions[transPos]['amount']=100000
+            #     self.blockcoin.chain[pos-1].hash = self.blockcoin.chain[pos-1].calculateHash()
+            #     print("Changed the transaction amount of transaction " + transPos + "in block with position " + str(pos) + " to " + str(self.blockcoin.chain[pos-1].transactions[transPos]['amount']) + " and recalculated it's hash")
+        else:
+            print("Blockchain doesn't exist. Please create one.")
         
 
 if __name__ == '__main__':
@@ -170,9 +189,7 @@ if __name__ == '__main__':
         elif choice == 4:
             currentUser.viewBlockchain()
         elif choice == 5:
-            # todo
-            # need idea to implement
-            print("Pending")
+            currentUser.modifyBlock()
         elif choice == 6:
             currentUser.checkBlockchainValid()
         elif choice == 7:
