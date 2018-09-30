@@ -131,6 +131,7 @@ class User_actions:
     def viewBlockchain(self):
         if self.blockcoin is not None:
             for block in self.blockcoin.chain:
+                # TODO hide nonce value
                 print(json.dumps(block, default=lambda o: o.__dict__, sort_keys=True, indent=4))
         else:
             print("Blockchain doesn't exist. Please create one.")
