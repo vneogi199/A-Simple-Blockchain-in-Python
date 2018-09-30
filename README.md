@@ -5,8 +5,9 @@ Implemented the basic concepts of Blockchain
 
 <b>Demo:</b>
 
-<img src="https://raw.githubusercontent.com/vneogi199/A-Simple-Blockchain-in-Python/master/Screenshots/2018-09-30-212029_1365x315_scrot.png">
 <b>Creating a Blockchain</b>
+<img src="https://raw.githubusercontent.com/vneogi199/A-Simple-Blockchain-in-Python/master/Screenshots/2018-09-30-212029_1365x315_scrot.png">
+
 
 <img src="https://raw.githubusercontent.com/vneogi199/A-Simple-Blockchain-in-Python/master/Screenshots/2018-09-30-212132_1365x309_scrot.png">
 <b>Creating a new transaction and adding to the list of pending transactions</b>
